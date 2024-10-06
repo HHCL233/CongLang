@@ -1,2 +1,2 @@
-# CongLang.github.io
- CongLang官网
+# CongLang官网
+ ⚠️本网站和对应架空世界观配套，非真实存在公司
