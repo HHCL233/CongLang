@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css">
+    <meta charset="UTF-8" />
+    <title>CongLang-首页</title>
+    
+</head>
+<body class="mdui-theme-primary-light-blue mdui-theme-accent-blue">
+    <div class="mdui-toolbar mdui-color-theme">
+        
+            <a href="javascript:;" class="mdui-btn mdui-btn-icon" id="example-dialog">
+                <i class="mdui-icon material-icons" mdui-dialog="{target: '#exampleDialog'}">menu</i>
+              </a>
+        
+            
+        
+        <span class="mdui-typo-title">CongLang-首页</span>
+        <div class="mdui-toolbar-spacer"></div>
+        <a href="javascript:;" class="mdui-btn mdui-btn-icon">
+          <i class="mdui-icon material-icons">more_vert</i>
+        </a>
+      </div>
+      <div class="mdui-dialog" id="exampleDialog">
+        <div class="mdui-dialog-title">其实这个菜单我还没有做好</div>
+        <div class="mdui-dialog-content">事已至此，先睡觉吧</div>
+        <div class="mdui-dialog-actions">
+          <button class="mdui-btn mdui-ripple" mdui-dialog-close>不睡！</button>
+          <button class="mdui-btn mdui-ripple" mdui-dialog-confirm onclick="window.close()">睡睡！</button>
+        </div>
+      </div>
+      <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+</body>
+</html>
