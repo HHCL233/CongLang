@@ -1,1 +1,1 @@
-console.log("aaaaaaaaaaaaaaaaaaaaaaaaa")
+alert("awa")
