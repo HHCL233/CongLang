@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="zh-CN" class="mdui-theme-auto">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script>
+// 根据 #0061a4 生成一套配色方案，并将 <html> 设置为该配色方案
+        mdui.setColorScheme('#0061a4');
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <title>GavaScript-Web | 下载</title>
+    <link rel="icon" type="image/png" href="WEBGS.png">
+    <style>
+        footer {
+            display: flex; /* 容器为flex布局 */
+            flex-direction: column; /* 方向为纵向，保持正常的从上到下文档流 */
+        }
+      
+    </style>
+  </head>
+  <body id="container" style="margin-left: 25px;margin-right: 25px;">
+    <div style="overflow: hidden">
+        <mdui-top-app-bar
+          position: fixed
+          scroll-behavior="elevate"
+        >
+          <mdui-top-app-bar-title style="margin-left: 16px;">GavaScript-Web</mdui-top-app-bar-title>
+          <div style="flex-grow: 1"></div>
+          <mdui-dropdown>
+            <mdui-button-icon icon="language" slot="trigger"></mdui-button-icon>
+            <mdui-menu style="width: 3000px;">
+                <mdui-menu-item disabled>选择使用的语言</mdui-menu-item>
+                <mdui-menu-item>简体中文(中国)</mdui-menu-item>
+            </mdui-menu>
+          </mdui-dropdown>
+        </mdui-top-app-bar>
+        <div class="example-scroll-behavior-elevate" style="height: 100%;overflow: auto;">
+          <div style="height: 100%">
+            <h1 data-v-ae246581="">下载</h1>
+            <p>此下载用于下载GavaScript-Web的本体和部分附加项。</p>
+            <h2>推荐下载</h2>
+            <mdui-card clickable variant="filled" style="width: 30%;height: 290px"><h5 style="margin-left: 25px;margin-right: 25px;">正式发布版本</h5><h3 style="margin-left: 25px;margin-right: 25px;">即将推出，<br>Coming Soon™</h3></mdui-card>
+            <mdui-card clickable style="width: 27%;height: 290px" href="https://gitee.com/gavascript-dev/gavascript-web/releases/download/v0.0.1-Beta/GS-Web0.0.1.exe"><h5 style="margin-left: 25px;margin-right: 25px;">预览体验版本</h5><h3 style="margin-left: 25px;margin-right: 25px;">抢先体验版，<br>现已公开。</h3></mdui-card>
+            <h2>更多选项</h2>
+            <!--本体下载选项-->
+            <h3>GavaScript-Web本体</h3>
+            <mdui-list>
+              <mdui-collapse accordion>
+                <mdui-collapse-item>
+                  <mdui-list-item rounded slot="header" icon="near_me">0.0.2</mdui-list-item>
+                  <div style="margin-left: 2.5rem">
+                    <mdui-list-item rounded>暂未发布</mdui-list-item>
+                  </div>
+                </mdui-collapse-item>
+                <mdui-collapse-item>
+                  <mdui-list-item rounded slot="header" icon="near_me">0.0.1</mdui-list-item>
+                  <div style="margin-left: 2.5rem">
+                    <mdui-list-item rounded href="https://gitee.com/gavascript-dev/gavascript-web/releases/download/v0.0.1-Beta/GS-Web0.0.1.exe">Windows x64下载</mdui-list-item>
+                  </div>
+                </mdui-collapse-item>
+              </mdui-collapse>
+            </mdui-list>
+            <!--本体下载选项-->
+            <!--更新组件下载选项-->
+            <h3>针对GavaScript-Web本体(0.0.1)发布的附加更新</h3>
+            <mdui-list>
+              <mdui-collapse accordion>
+                <mdui-collapse-item>
+                  <mdui-list-item rounded slot="header" icon="near_me">对 GavaScript-Web Network 更新 的支持</mdui-list-item>
+                  <div style="margin-left: 2.5rem">
+                    <mdui-list-item rounded>暂未发布</mdui-list-item>
+                  </div>
+                </mdui-collapse-item>
+                <mdui-collapse-item>
+                  <mdui-list-item rounded slot="header" icon="near_me">对 GTML(Gava Text Markup Language) 的支持</mdui-list-item>
+                  <div style="margin-left: 2.5rem">
+                    <mdui-list-item rounded>暂未发布</mdui-list-item>
+                  </div>
+                </mdui-collapse-item>
+              </mdui-collapse>
+            </mdui-list>
+        </div>
+      </div>
+    </div>
+      <footer>
+        <mdui-card variant="elevated" style="width: 100%;height: flex">
+        <p style="margin-left: 25px;margin-right: 25px;">⚠️GavaScript-Web与JavaScript没有任何关联。附加项部分为社区制作，已获得许可。</p>
+        <mdui-button variant="tonal" style="margin-left: 25px;margin-right: 25px;" href="https://gitee.com/gavascript-dev/gavascript-web">Gitee<mdui-icon slot="icon" name='link'></mdui-icon></mdui-button>
+        <mdui-button variant="tonal" style="margin-left: 25px;margin-right: 25px;" href="https://ifdian.net/a/gavascript">在“爱发电”上支持我们<mdui-icon slot="icon" name='link'></mdui-icon></mdui-button>
+        <mdui-button variant="tonal" style="margin-left: 25px;margin-right: 25px;" href="https://flowus.cn/gavascript/share/eb19ead5-5721-45f2-985f-1c885a775b06">隐私政策</mdui-button>
+        <mdui-dialog close-on-overlay-click class="example-header" close-on-esc>
+          <span slot="headline">有关您的个人数据跨境传输</span>
+          <span slot="description">当您在使用 GavaScript-Web 给您提供的联网服务 时，GavaScript-Web 会将一些对于向您提供和运行这些服务必要的个人数据传输至中国大陆的服务器进行处理。对于传输的数据，GavaScript-Web 将采取符合业界标准的加密措施保护您的数据安全。存储在您计算机本地的数据将不会被传输，除非您采取主动操作进行跨境传输，例如主动将您的 GavaScript-Web 用户档案(CongLang账户)等信息存储至中国大陆的云服务提供商。如果您不同意 GavaScript-Web 将这些必要数据传输至中国大陆的服务器上进行处理。您可以在不登录至 GavaScript-Web Network(CongLang账户) 的情况下使用 GavaScript-Web，部分功能例如 GavaScript-Web Network 更新、GavaScript-Web Network 下载附加项(GSAddon-Web) 等功能将无法使用。</span>
+          <mdui-button full-width id="close">好</mdui-button>
+        </mdui-dialog>
+  
+        <mdui-button variant="tonal" style="margin-left: 25px;margin-right: 25px;">如果您不居住在中国大陆…<mdui-icon slot="icon" name='error_outline'></mdui-icon></mdui-button>
+  
+            <script>
+                const dialog = document.querySelector(".example-header");
+                const openButton = dialog.nextElementSibling;
+                const closeButton = dialog.querySelector("#close");
+  
+                openButton.addEventListener("click", () => dialog.open = true);
+                closeButton.addEventListener("click", () => dialog.open = false);
+            </script>
+            <br><br><br>
+            <p style="text-align: right;font-size:x-small;">© 2025 GavaScript-Web 保留所有权利。</p>
+            <p style="text-align: right;font-size:x-small;">© 2023-2025 CongLang 保留部分权利。</p>
+            <p style="text-align: right;font-size:x-small;">Powered by <a href="https://www.mdui.org/zh-cn/">MDUI</a> & <a href="https://gitee.com/gavascript-dev/gavascript-web">GavaScript-Web</a></p>
+        </mdui-card>
+      </footer>
+  </body>
+</html>
