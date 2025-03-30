@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="zh-CN" class="mdui-theme-auto">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, shrink-to-fit=no"/>
+    <meta name="renderer" content="webkit"/>
+    
+    <link rel="stylesheet" href="https://unpkg.com/mdui@2/mdui.css">
+    <script src="https://unpkg.com/mdui@2/mdui.global.js"></script>
+    <script>
+// 根据 #0061a4 生成一套配色方案，并将 <html> 设置为该配色方案
+        mdui.setColorScheme('#0061a4');
+    </script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
+    <title>《红温群写况》</title>
+    <link rel="icon" type="image/png" href="../WEBGS.png">
+    <style>
+      html, body {
+    scroll-behavior: smooth;
+      }
+        footer {
+            display: flex; /* 容器为flex布局 */
+            flex-direction: column; /* 方向为纵向，保持正常的从上到下文档流 */
+        }
+        .contents {
+          float: right;
+        }
+    .items{
+      width: 350px;
+      
+    }
+    .text{
+      font-size:medium;
+    }
+      
+    </style>
+  </head>
+  <body id="container" style="margin-left: 25px;margin-right: 25px;">
+    <div style="overflow: hidden">
+        <mdui-top-app-bar
+          position: fixed
+          scroll-behavior="elevate"
+        >
+          <mdui-top-app-bar-title style="margin-left: 16px;">红温群</mdui-top-app-bar-title>
+          <div style="flex-grow: 1"></div>
+          <mdui-dropdown>
+            <mdui-button-icon icon="language" slot="trigger"></mdui-button-icon>
+            <mdui-menu style="width: 3000px;">
+                <mdui-menu-item disabled>选择使用的语言</mdui-menu-item>
+                <mdui-menu-item>简体中文(中国)</mdui-menu-item>
+            </mdui-menu>
+          </mdui-dropdown>
+        </mdui-top-app-bar>
+        <div class="contents" style="position:fixed;margin-top:20px;margin-left:75%">
+          <div>本页目录</div>
+            <mdui-list class="items">
+              <mdui-list-item class="items" headline-line="1" rounded headline="第一章" href="#one"></mdui-list-item>
+              <mdui-list-item class="items" headline-line="1" rounded headline="第二章" href="#two"></mdui-list-item>
+              <mdui-list-item class="items" headline-line="1" rounded headline="第三章" href="#three"></mdui-list-item>
+              <mdui-list-item class="items" headline-line="1" rounded headline="第四章" href="#Four"></mdui-list-item>
+            </mdui-list>
+          </div>
+          <!--下方为文档内容-->
+          <div style="height: 100%">
+            <h1 >《红温群写况》</h1>
+            <div id="one">
+              <h2>第一章</h2>
+              <p>想当年<br>
+                红温爱好者俱乐部<br>
+                是全网最开放的群聊<br>
+                不仅可以打广告<br>
+                还可以赤石<br>
+                甚至都能擦边！<br>
+                QQ官方是管都不管啊!!!!<br>
+                可是<br>
+                时过境迁<br>
+                红温群也变的不那么开放了……<br>
+                而这也是红温群死亡的开始……
+                </p>
+            </div>
+            <div id="two">
+              <h2>第二章</h2>
+              <p>在神奇的宏文村<br>
+                有着这样一种美丽的民俗<br>
+                在每一天都可能发生<br>
+                在那个时候<br>
+                人们会互相<br>
+                /气呼呼
+              </p>
+            </div>
+            <div id="three">
+              <h2>第三章</h2>
+              <p>啊！<br>
+                亲爱的红温群！<br>
+                啊！<br>
+                亲爱的红温群！<br>
+                你为什么不再美丽！<br>
+                你为什么不再美丽！<br>
+                都是因为宜刻乐！<br>
+                都是因为宜刻乐！<br>
+                只要宜刻乐消失就会变好~
+              </p>
+            </div>
+            <div id="Four">
+              <h2>第四章</h2>
+              <p>啊！<br>
+                红温群，你已不再像当初如此美丽<br>
+                但是<br>
+                为了这个群的未来<br>
+                我们要把红温群占领啦哈哈哈哈～
+              </p>
+            </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
