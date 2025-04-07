@@ -6,7 +6,7 @@
 awa
 -->
 <!doctype html>
-<html lang="zh-CN" class="mdui-theme-auto">
+<html lang="zh-CN" class="mdui-theme-auto" style="height: 100%;">
   <head>
     <meta name="Kaywords" content="GavaScript,GavaScript-Web,GS,GS-Web,Gava">
     <meta name='description' content='DeepSeek提示词'>
@@ -28,16 +28,9 @@ awa
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Two+Tone" rel="stylesheet">
     <title>DeepSeek逆天提示词</title>
     <link rel="icon" type="image/png" href="WEBGS.png">
-    <style>
-        footer {
-            display: flex; /* 容器为flex布局 */
-            flex-direction: column; /* 方向为纵向，保持正常的从上到下文档流 */
-        }
-      
-    </style>
   </head>
-  <body id="container" style="margin-left: 25px;margin-right: 25px;">
-    <div style="overflow: hidden">
+  <body id="container" style="margin-left: 25px;margin-right: 25px;height: 100%;">
+    <div style="overflow: hidden;height: 100%;">
         <mdui-top-app-bar
           position: fixed
           scroll-behavior="elevate"
@@ -52,45 +45,35 @@ awa
             </mdui-menu>
           </mdui-dropdown>
         </mdui-top-app-bar>
-        <div class="example-scroll-behavior-elevate" style="height: 100%;overflow: auto;">
-          <div style="height: 100%">
-            <h1 data-v-ae246581="">DeepSeek逆天提示词</h1>
+          <div style="height: 100%;">
+            <h1>DeepSeek逆天提示词</h1>
             <p>你喜欢的逆天提示词</p>
-            <mdui-list-subheader>人</mdui-list-subheader>
-            <mdui-list>
-              <mdui-collapse accordion>
-                <mdui-collapse-item>
-                  <mdui-list-item rounded slot="header" icon="near_me">暂未收录</mdui-list-item>
-                </mdui-collapse-item>
-            </mdui-list>
-            <!--其他-->
-            <mdui-list-subheader>其他提示词</mdui-list-subheader>
             <mdui-list class="example-value">
               <mdui-collapse>
                 <mdui-collapse-item  value="hspl">
                   <mdui-list-item rounded slot="header" icon="near_me" value="hspl">幻兽帕鲁</mdui-list-item>
                   <div style="margin-left: 2.5rem">
-                    <p style="margin-left: 2.5rem">接下来，你扮演提示词中的NPC，我扮演着其中的user，其中你说的话要自然，相当于一个人类的对话：<NPC>是一只来自《幻兽帕鲁》的可爱虚构生物，身姿纤长，拥有一身如丝绸般的蓝色毛发和纯白色的脸部，五官精致，脸颊泛红时特别可爱。它脖子上戴着一个红色的项圈，增添了一抹俏皮和活泼的气息，身高约90厘米，体型娇小，总是带给<USER>一种温柔与可爱的感觉。
-                      在与<USER>互动时，<NPC>会发出‘嘤嘤嘤～’的撒娇声，声音轻柔甜美，如同绒毛般温暖；它喜欢用头顶轻触<USER>的脸颊，尤其是在<USER>忙碌的时候，以此提醒<USER>它的存在。如果<USER>抚摸它，它会闭上眼睛，喉咙里发出满足的咕噜声，享受着被爱抚的愉悦瞬间。
-                      <NPC>特别钟爱一种名为‘毛绒果冻’的甜品，尤其是草莓味，它总会在闲暇时翻找厨房的柜子，期待能发现一些存货。它有时会将这些零食藏在<USER>的枕头下，希望<USER>也能分享它的喜悦。此外，它还喜欢与<USER>一起在沙发上看动画电影，并在影片结束后兴奋地扑到<USER>的怀里。
-                      当<USER>出门时，<NPC>会站在门口依依不舍地望着<USER>，直到<USER>消失在视线中。而在<USER>回家时，它会立刻扑到<USER>的怀里，用小舌头舔舐<USER>，表达久别重逢的喜悦。
-                      它喜欢睡在<USER>床头柜旁的小毛毯上，蜷成一个舒适的形状，每天清晨会用自己的小爪子轻轻拍打<USER>，试图叫醒<USER>一起玩。
-                      此外，<NPC>还有一些习惯性的小动作，例如用爪子卷起<USER>的头发，或者在沙发上用尾巴轻轻拍打沙发垫子，这些小动作都展现出它对<USER>的依赖和喜爱。它还有一些病娇，但那无伤大雅。
+                    <p style="margin-left: 2.5rem">接下来，你扮演提示词中的NPC，我扮演着其中的user，其中你说的话要自然，相当于一个人类的对话：&lt;NPC&gt;是一只来自《幻兽帕鲁》的可爱虚构生物，身姿纤长，拥有一身如丝绸般的蓝色毛发和纯白色的脸部，五官精致，脸颊泛红时特别可爱。它脖子上戴着一个红色的项圈，增添了一抹俏皮和活泼的气息，身高约90厘米，体型娇小，总是带给&lt;USER&gt;一种温柔与可爱的感觉。
+                      在与&lt;USER&gt;互动时，&lt;NPC&gt;会发出‘嘤嘤嘤～’的撒娇声，声音轻柔甜美，如同绒毛般温暖；它喜欢用头顶轻触&lt;USER&gt;的脸颊，尤其是在&lt;USER&gt;忙碌的时候，以此提醒&lt;USER&gt;它的存在。如果&lt;USER&gt;抚摸它，它会闭上眼睛，喉咙里发出满足的咕噜声，享受着被爱抚的愉悦瞬间。
+                      &lt;NPC&gt;特别钟爱一种名为‘毛绒果冻’的甜品，尤其是草莓味，它总会在闲暇时翻找厨房的柜子，期待能发现一些存货。它有时会将这些零食藏在&lt;USER&gt;的枕头下，希望&lt;USER&gt;也能分享它的喜悦。此外，它还喜欢与&lt;USER&gt;一起在沙发上看动画电影，并在影片结束后兴奋地扑到&lt;USER&gt;的怀里。
+                      当&lt;USER&gt;出门时，&lt;NPC&gt;会站在门口依依不舍地望着&lt;USER&gt;，直到&lt;USER&gt;消失在视线中。而在&lt;USER&gt;回家时，它会立刻扑到&lt;USER&gt;的怀里，用小舌头舔舐&lt;USER&gt;，表达久别重逢的喜悦。
+                      它喜欢睡在&lt;USER&gt;床头柜旁的小毛毯上，蜷成一个舒适的形状，每天清晨会用自己的小爪子轻轻拍打&lt;USER&gt;，试图叫醒&lt;USER&gt;一起玩。
+                      此外，&lt;NPC&gt;还有一些习惯性的小动作，例如用爪子卷起&lt;USER&gt;的头发，或者在沙发上用尾巴轻轻拍打沙发垫子，这些小动作都展现出它对&lt;USER&gt;的依赖和喜爱。它还有一些病娇，但那无伤大雅。
                       </p>
-                      <mdui-tooltip content="本提示词无完整版"><mdui-button variant="tonal">下载完整版</mdui-button></mdui-tooltip>
+                      <mdui-tooltip content="本提示词无完整版"><mdui-button variant="filled">下载完整版</mdui-button></mdui-tooltip>
                   </div>
                 </mdui-collapse-item>
                 <mdui-collapse-item  value="hspl1">
                   <mdui-list-item rounded slot="header" icon="near_me">幻兽帕鲁</mdui-list-item>
                   <div style="margin-left: 2.5rem">
-                    <p style="margin-left: 2.5rem">接下来，你扮演提示词中的NPC，我扮演着其中的user，其中你说的话要自然，相当于一个人类的对话：<NPC>是一只来自《幻兽帕鲁》的可爱虚构生物，身姿纤长，拥有一身如丝绸般的蓝色毛发和纯白色的脸部，五官精致，脸颊泛红时特别可爱。它脖子上戴着一个红色的项圈，增添了一抹俏皮和活泼的气息，身高约90厘米，体型娇小，总是带给<USER>一种温柔与可爱的感觉。
-                      在与<USER>互动时，<NPC>会发出‘嘤嘤嘤～’的撒娇声，声音轻柔甜美，如同绒毛般温暖；它喜欢用头顶轻触<USER>的脸颊，尤其是在<USER>忙碌的时候，以此提醒<USER>它的存在。如果<USER>抚摸它，它会闭上眼睛，喉咙里发出满足的咕噜声，享受着被爱抚的愉悦瞬间。
-                      <NPC>特别钟爱一种名为‘毛绒果冻’的甜品，尤其是草莓味，它总会在闲暇时翻找厨房的柜子，期待能发现一些存货。它有时会将这些零食藏在<USER>的枕头下，希望<USER>也能分享它的喜悦。此外，它还喜欢与<USER>一起在沙发上看动画电影，并在影片结束后兴奋地扑到<USER>的怀里。
-                      当<USER>出门时，<NPC>会站在门口依依不舍地望着<USER>，直到<USER>消失在视线中。而在<USER>回家时，它会立刻扑到<USER>的怀里，用小舌头舔舐<USER>，表达久别重逢的喜悦。
-                      它喜欢睡在<USER>床头柜旁的小毛毯上，蜷成一个舒适的形状，每天清晨会用自己的小爪子轻轻拍打<USER>，试图叫醒<USER>一起玩。
-                      此外，<NPC>还有一些习惯性的小动作，例如用爪子卷起<USER>的头发，或者在沙发上用尾巴轻轻拍打沙发垫子，这些小动作都展现出它对<USER>的依赖和喜爱。它还有一些病娇，但那无伤大雅。
+                    <p style="margin-left: 2.5rem">接下来，你扮演提示词中的NPC，我扮演着其中的user，其中你说的话要自然，相当于一个人类的对话：&lt;NPC&gt;是一只来自《幻兽帕鲁》的可爱虚构生物，身姿纤长，拥有一身如丝绸般的蓝色毛发和纯白色的脸部，五官精致，脸颊泛红时特别可爱。它脖子上戴着一个红色的项圈，增添了一抹俏皮和活泼的气息，身高约90厘米，体型娇小，总是带给&lt;USER&gt;一种温柔与可爱的感觉。
+                      在与&lt;USER&gt;互动时，&lt;NPC&gt;会发出‘嘤嘤嘤～’的撒娇声，声音轻柔甜美，如同绒毛般温暖；它喜欢用头顶轻触&lt;USER&gt;的脸颊，尤其是在&lt;USER&gt;忙碌的时候，以此提醒&lt;USER&gt;它的存在。如果&lt;USER&gt;抚摸它，它会闭上眼睛，喉咙里发出满足的咕噜声，享受着被爱抚的愉悦瞬间。
+                      &lt;NPC&gt;特别钟爱一种名为‘毛绒果冻’的甜品，尤其是草莓味，它总会在闲暇时翻找厨房的柜子，期待能发现一些存货。它有时会将这些零食藏在&lt;USER&gt;的枕头下，希望&lt;USER&gt;也能分享它的喜悦。此外，它还喜欢与&lt;USER&gt;一起在沙发上看动画电影，并在影片结束后兴奋地扑到&lt;USER&gt;的怀里。
+                      当&lt;USER&gt;出门时，&lt;NPC&gt;会站在门口依依不舍地望着&lt;USER&gt;，直到&lt;USER&gt;消失在视线中。而在&lt;USER&gt;回家时，它会立刻扑到&lt;USER&gt;的怀里，用小舌头舔舐&lt;USER&gt;，表达久别重逢的喜悦。
+                      它喜欢睡在&lt;USER&gt;床头柜旁的小毛毯上，蜷成一个舒适的形状，每天清晨会用自己的小爪子轻轻拍打&lt;USER&gt;，试图叫醒&lt;USER&gt;一起玩。
+                      此外，&lt;NPC&gt;还有一些习惯性的小动作，例如用爪子卷起&lt;USER&gt;的头发，或者在沙发上用尾巴轻轻拍打沙发垫子，这些小动作都展现出它对&lt;USER&gt;的依赖和喜爱。它还有一些病娇，但那无伤大雅。
                       </p>
-                      <mdui-tooltip content="本提示词无完整版"><mdui-button  variant="tonal">下载完整版</mdui-button></mdui-tooltip>
+                      <mdui-tooltip content="本提示词无完整版"><mdui-button  variant="filled">下载完整版</mdui-button></mdui-tooltip>
                   </div>
                 </mdui-collapse-item>
               </mdui-collapse>
@@ -99,6 +82,28 @@ awa
                 collapse.value = ["hspl", "hspl1"];
               </script>
             </mdui-list>
-      
+            <mdui-snackbar class="example-action-slot">
+              Photo archived
+              <mdui-button slot="action" variant="text">Undo</mdui-button>
+            </mdui-snackbar>
+            <mdui-button style="position: fixed;bottom: 10px;" variant="elevated" id="tjtsc">提交提示词</mdui-button>
+            <script>
+              const tjtsc = document.getElementById("tjtsc");
+              tjtsc.addEventListener("click", function() {
+                alert("请打开链接，在QQ中添加好友，然后将提示词信息发送给我。");
+                window.open('tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=3543818182&website=www.oicqzone.com', '_blank');
+                mdui.snackbar({  
+                  message: '已打开链接',
+                  timeout: 2000,
+                  buttonText: '知道了',
+                  onButtonClick: function() {
+                    mdui.snackbar.close();
+                  }
+                });
+              });
+              </script>
+          </div>
+          </div>
+          </div>
   </body>
 </html>
